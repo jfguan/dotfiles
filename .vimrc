@@ -19,6 +19,7 @@ set wildmenu
 set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
 set nobackup
 set confirm
+set clipboard=unnamed
 
 vnoremap <C-c> <Esc>
 inoremap <C-c> <Esc>
