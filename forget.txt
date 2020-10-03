@@ -1,0 +1,11 @@
+git credential store
+git config --global credential.helper store
+
+infinite command
+while true; <command here>; sleep 2; done
+
+python env activate
+source env/bin/activate
+
+conda create --name conda_env python=3
+source activate conda_env
