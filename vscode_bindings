@@ -97,5 +97,6 @@
         "command": "workbench.action.previousEditorInGroup"
     }
     { "key": "ctrl+shift+j", "command": "workbench.action.terminal.focusNext" },
-    { "key": "ctrl+shift+k", "command": "workbench.action.terminal.focusPrevious" }
+    { "key": "ctrl+shift+k", "command": "workbench.action.terminal.focusPrevious" },
+    { "key": "ctrl+shift+q", "command": "workbench.action.terminal.kill" }
 ]
