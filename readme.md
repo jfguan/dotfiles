@@ -6,6 +6,3 @@ chrome:
 Vim:
 	use relative + absolute numbering
 	ctrl-w to delete a word, ctrl-u to delete the line
-
-Lyft:
-	. venv/bin/activate

@@ -3,12 +3,25 @@ https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcu
 1. use f to jump to the first occurance of a letter - 'fb' jumps to first b, F/T searches in the reversed direction, t places you in front of the word
 use ; to repeat last f or t movement, use , to go backwards if you overshoot.
     a. Remember as (f)ind and (t)il, use vt<letter>c to see where it will change up to, or just t<letter>c if you're confident
+
 2. use ctrl - w to erase the last word typed or ctrl-backspace
 3. Use w to go to next word and b to go to back one word
-
 4. Use {/} to go to next/previous paragraph
 5. Use C to change remaining part of line
 6. */# goes to next/previous instance of a word.
 7. ctrl-x while in insert mode to enter word completion
-
 8. Autocomplete while in insert mode??
+9. s command deletes character under cursor and goes into insert mode
+10. /pattern<CR> with n and N for rep/rev to scan doc, use ?pattern for prev match
+11. :s/taget/replacement substituion with & and u as forward and back
+12. use * to highlight all occurances of word under cursor
+
+
+Chapter 1 the vim way:
+The dot command repeats the last change.
+Make commands and motion repeatable.
+
+Pasted exercise section:
+...We're waiting for content before the site can go live...
+...If you are content with this, let's go ahead with it...
+...We'll launch as soon as we have the content...
