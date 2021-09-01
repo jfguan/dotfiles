@@ -4,6 +4,12 @@ https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcu
 use ; to repeat last f or t movement, use , to go backwards if you overshoot.
     a. Remember as (f)ind and (t)il, use vt<letter>c to see where it will change up to, or just t<letter>c if you're confident
 
+2. use m<char> to make a mark, then `<char> to return to that spot
+	a. NI use capital character for global files
+	b. use :marks to get list of marks
+	c. use `[] marks as last changed text
+	d. read https://www.linux.com/news/vim-tips-moving-around-using-marks-and-jumps/
+
 2. use ctrl - w to erase the last word typed or ctrl-backspace
 3. Use w to go to next word and b to go to back one word
 4. Use {/} to go to next/previous paragraph
@@ -15,6 +21,9 @@ use ; to repeat last f or t movement, use , to go backwards if you overshoot.
 10. /pattern<CR> with n and N for rep/rev to scan doc, use ?pattern for prev match
 11. :s/taget/replacement substituion with & and u as forward and back
 12. use * to highlight all occurances of word under cursor
+13. Learn to use macros q<char> actions... q to record
+	a. @<char> to use that macro
+	b. @@ to reuse last macro
 
 
 Chapter 1 the vim way:
