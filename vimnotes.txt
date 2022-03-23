@@ -3,16 +3,18 @@ https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcu
 1. use f to jump to the first occurance of a letter - 'fb' jumps to first b, F/T searches in the reversed direction, t places you in front of the word
 use ; to repeat last f or t movement, use , to go backwards if you overshoot.
     a. Remember as (f)ind and (t)il, use vt<letter>c to see where it will change up to, or just t<letter>c if you're confident
-
 2. use m<char> to make a mark, then `<char> to return to that spot
 	a. NI use capital character for global files
 	b. use :marks to get list of marks
 	c. use `[] marks as last changed text
 	d. read https://www.linux.com/news/vim-tips-moving-around-using-marks-and-jumps/
+4. Use {/} to go to next/previous paragraph
+5. z. and zz commands z. also moves the cursor to the first non-whitespace character in the line, while zz keeps the cursor where it is.
+
+
 
 2. use ctrl - w to erase the last word typed or ctrl-backspace
 3. Use w to go to next word and b to go to back one word
-4. Use {/} to go to next/previous paragraph
 5. Use C to change remaining part of line
 6. */# goes to next/previous instance of a word.
 7. ctrl-x while in insert mode to enter word completion

@@ -1,0 +1,10 @@
+[user]
+	name = Jeff Guan
+	email = jguan@lyft.com
+[init]
+	templateDir = /opt/lyft/.git-template
+[alias]
+    a = add -u
+    c = commit -m
+    psetup = push --set-upstream origin
+    update = pull origin master
