@@ -4,3 +4,5 @@ copy vscode bindings
 copy vscode color theme options
 install xcode for c++
 
+add keyboard shortcuts !check = checkemoji
+
