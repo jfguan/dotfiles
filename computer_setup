@@ -1,8 +1,32 @@
-ctrl-shift-h/l to go side to side
-download backgrounds
-copy vscode bindings
-copy vscode color theme options
+mac system preferences
+1.turn on darkmode
+2. turn up mouse speed
+3. look up how to enable repeating keys
+4. sync chrome
+5. ctrl-shift-h/l to go side to side
+6. download backgrounds
+7. setup pfp, import to photos
+8. enable touchid
+9. add keyboard shortcuts !check = checkemoji, use ctrl cmd space to emoji
+10. Change caps to ctr;
+11. disable dock
+12. install magnet
+
+vscode
+1. copy vscode bindings
+2. install material theme/icon
+3. install python
+3. install vim
+4. turn on vscode sync
+
+setup iterm and zsh
+1.download iterm
+2. install inconsolata powerline font
+3. copy zshrc from dotfiles
+4. install zsh stuffpackages
+5. install homebrew
+
+
 install xcode for c++
 
-add keyboard shortcuts !check = checkemoji
 
