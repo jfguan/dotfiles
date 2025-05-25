@@ -19,14 +19,20 @@ vscode
 3. install vim
 4. turn on vscode sync
 
-setup iterm and zsh
-1.download iterm
-2. install inconsolata powerline font
-3. copy zshrc from dotfiles
-4. install zsh stuffpackages
-5. install homebrew
+Setup terminal
+- Download kitty terminal
+	- set themes for kitty, with `kitten themes`
+- install homebrew
+- install helix editor
+	- set themes for helix
+	- cp -r ./src/dotfiles/helix ~/.config/helix
+- Install inconsolata powerline font
+	- https://github.com/powerline/fonts
+- copy zshrc from dotfiles
+- install spaceship prompt
+- install oh my zsh
 
+brew install zsh-syntax-highlighting
 
-install xcode for c++
 
 
