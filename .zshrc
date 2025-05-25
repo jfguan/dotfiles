@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/go/bin
+eval "$(aactivator init)"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/chaitea/.oh-my-zsh"
+export ZSH="/Users/jguan/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -11,6 +12,7 @@ ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   git           # Git section (git_branch + git_status)
+  venv
   node          # Node.js section
   xcode         # Xcode section
   jobs          # Background jobs indicator
@@ -107,5 +109,39 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /Users/chaitea/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/jguan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+source /Users/jguan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source '/Users/jguan/src/awsaccess/awsaccess2.sh' # awsaccess
+source '/Users/jguan/src/awsaccess/oktaawsaccess.sh' # oktaawsaccess
+export PS1="\$(ps1_mfa_context)$PS1" # awsaccess
+export DBUSER=jguan@lyft.com
+
+export PATH=$PATH:/Users/jguan/src/airflowinfra/tars/k8s/
+### lyft_localdevtools_shell_rc start
+### DO NOT REMOVE: automatically installed as part of Lyft local dev tool setup
+if [[ -f "/opt/homebrew/Library/Taps/lyft/homebrew-localdevtools/scripts/shell_rc.sh" ]]; then
+    source "/opt/homebrew/Library/Taps/lyft/homebrew-localdevtools/scripts/shell_rc.sh"
+fi
+### lyft_localdevtools_shell_rc end
+
+# Add support for Go modules and Lyft's Athens module proxy/store
+# These variables were added by 'hacktools/set_go_env_vars.sh'
+export GOPROXY='https://athens.ingress.infra-prd.us-east-1.k8s.lyft.net'
+export GONOSUMDB='github.com/lyft/*,github.lyft.net/*'
+
+### DO NOT REMOVE: automatically installed as part of Lyft local dev tool setup
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
+
+eval "$(/Users/jguan/src/idl/idldev-tool/bin/idldev init -)"
+export PATH=/opt/homebrew/bin:$PATH
+
+
+### lyft_rd_shell_rc start
+### DO NOT REMOVE: automatically installed as part of Rancher Desktop setup
+if [[ -f /Users/jguan/.rd/shell_rc.sh ]]; then
+  source /Users/jguan/.rd/shell_rc.sh
+fi
+### lyft_rd_shell_rc end
+
+. "$HOME/.local/bin/env"
