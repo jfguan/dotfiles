@@ -31,8 +31,7 @@ Setup terminal
 - copy zshrc from dotfiles
 - install spaceship prompt
 - install oh my zsh
-
-brew install zsh-syntax-highlighting
+	- install syntax highlighting and spaceship via oh my zsh
 
 
 
